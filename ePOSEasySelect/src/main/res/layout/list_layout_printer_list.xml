@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    >
+<TextView
+    android:id="@+id/Address"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+<TextView
+    android:id="@+id/PrinterName"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:textAppearance="?android:attr/textAppearanceSmall" />
+    />
+</LinearLayout>-->
+<TwoLineListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@layout/shape_list_information"
+    android:mode="twoLine"
+    android:orientation="horizontal"
+    android:paddingBottom="4dp"
+    android:paddingTop="4dp" >
+
+    <TextView
+        android:id="@+id/PrinterName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PrinterName"
+        android:layout_below="@+id/PrinterName"
+        android:layout_margin="5dp"
+    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</TwoLineListItem>

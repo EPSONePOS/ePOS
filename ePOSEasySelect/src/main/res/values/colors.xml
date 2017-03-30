@@ -1,0 +1,8 @@
+<resources>
+    <color name="text_normal">#000000</color>
+    <color name="button_normal">#000000</color>
+    <color name="background_activity">#e5e5e5</color>
+    <color name="light_gray">#C0C0C0</color>
+    <color name="divider">#C0C0C0</color>
+    <color name="red">#FF0000</color>
+</resources>

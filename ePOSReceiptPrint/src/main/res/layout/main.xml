@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".EPOSReceiptPrintSampleActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button_discovery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/main_button_discovery" />
+       
+        <TextView 
+            android:id="@+id/text_printer"
+            android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/text_label_printer"
+	        android:textColor="#000000" />
+	    <Spinner
+	        android:id="@+id/spinner_printer"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10dp" />
+	       
+	    <TextView 
+            android:id="@+id/text_model"
+            android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/text_label_modelname"
+	        android:textColor="#000000" />
+	    <Spinner
+	        android:id="@+id/spinner_model"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/button_print"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/main_button_print" />
+        
+        <TextView 
+            android:id="@+id/text_warnings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_label_warnings"
+            android:textColor="#000000" />
+        
+        <EditText
+            android:id="@+id/edit_warnings"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:inputType="none"/>
+        
+    </LinearLayout>
+
+</ScrollView>

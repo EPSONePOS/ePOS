@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_activity"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/QP_List_TargetInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@layout/shape_list_information"
+            android:divider="@color/divider"
+            android:dividerHeight="1dp" >
+
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="8"
+        android:orientation="horizontal" >
+
+        <View
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1" />
+
+        <FrameLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="3"
+	        android:layout_gravity="center"
+	        android:scaleType="fitCenter" >
+
+	        <ImageView
+	            android:id="@+id/QP_img_NFC"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_gravity="center"
+	            android:scaleType="fitCenter"
+	            android:src="@drawable/nfc" />
+
+        </FrameLayout>
+
+        <View
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/QP_Layout_CameraPreview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="3" />
+
+        <!-- プレビュー開始時のちらつきを抑えるおまじない -->
+		<SurfaceView
+	        android:layout_width="0dp"
+	        android:layout_height="0dp" />
+
+        <View
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+	    <TextView
+	        android:id="@+id/QP_txt_Nfc"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3"
+	        android:text="@string/QP_txt_Nfc"
+	        android:textColor="@color/text_normal" />
+
+	    <TextView
+	        android:id="@+id/QP_txt_QrCode"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3"
+	        android:text="@string/QP_txt_QrCode"
+	        android:textColor="@color/text_normal" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+    <LinearLayout
+        android:id="@+id/quickPairing_nfc_settings_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/QP_msg_NfcInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/red" />
+
+        <Button
+            android:id="@+id/QP_btn_NfcSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/QP_btn_NfcSetting"
+            android:textColor="@color/button_normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/QP_msg_Information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/QP_Lbl_Connecting"
+            android:textColor="@color/text_normal"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/QP_btn_Print"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:enabled="false"
+            android:minHeight="48dp"
+            android:minWidth="96dp"
+            android:text="@string/QP_btn_Print"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/button_normal" />
+
+    </LinearLayout>
+
+</LinearLayout>

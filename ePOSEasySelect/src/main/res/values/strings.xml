@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) Seiko Epson Corporation 2013-2014. All rights reserved. -->
+<resources>
+
+<string name="app_name">ePOSEasySelect</string>
+<string name="Main_btn_QuickPairingSample">Quick pairing and Easy print by NFC/QR code</string>
+<string name="Main_btn_PrintQRCodeSample">Print QR code</string>
+<string name="dialog_title_error">Error</string>
+<string name="dialog_btn_ok">ok</string>
+<string name="dialog_btn_yes">yes</string>
+<string name="dialog_btn_no">no</string>
+
+<string name="QP_Title_QuickPairingSample">Quick pairing and Easy print by NFC/QR code</string>
+<string name="QP_txt_TargetPrinter">Target Printer</string>
+<string name="QP_Item_PrinterInfo_PrinterName">Printer name</string>
+<string name="QP_Item_PrinterInfo_Interface">Interface</string>
+<string name="QP_Item_Interface_Network">Network</string>
+<string name="QP_Item_Interface_Bluetooth">Bluetooth</string>
+<string name="QP_Item_Interface_USB">USB</string>
+<string name="QP_Item_PrinterInfo_MacAddress">MAC/BD address</string>
+<string name="QP_txt_Nfc">A. Touching NFC</string>
+<string name="QP_txt_QrCode">B. Scanning QR code</string>
+<string name="QP_btn_Print">Print</string>
+<string name="QP_msg_NfcNoSupport">This device has no NFC feature.</string>
+<string name="QP_msg_NfcDisabled">NFC is disabled.</string>
+<string name="QP_btn_NfcSetting">Open NFC settings</string>
+<string name="QP_Lbl_Connecting">Connecting</string>
+<string name="QP_msg_PrintError">Failed to print QR code.</string>
+<string name="QP_msg_ErrorPrinterOpen">Failed to open the printer.</string>
+
+<string name="PQR_Title_PrintQRCodeSample">Print QR code</string>
+<string name="PQR_btn_SelectPrinter">Find</string>
+<string name="PQR_txt_Target">Target</string>
+<string name="PQP_txt_PrinterName">Printer Name</string>
+<string name="PQR_txt_Interface">Interface</string>
+<string name="PQR_txt_MacAddress">MAC/BD address</string>
+<string name="PQR_btn_Print">Print</string>
+<string name="PQR_msg_PrintError">Failed to print QR code.</string>
+
+<string name="CP_Title_ChoosePrinter">Printer List</string>
+<string name="CP_Lbl_Filter">Interface</string>
+<string name="CP_Item_FindFilter_Network">Network</string>
+<string name="CP_Item_FindFilter_Bluetooth">Bluetooth</string>
+<string name="CP_Msg_NowFinding">Searching…</string>
+<string name="CP_Msg_NotFound">Cannot find printer.</string>
+<string name="CP_Msg_TurnOnWiFi">Wi-Fi is disabled.\nDo you want to enable Wi-Fi?</string>
+<string name="CP_Msg_TurnOnBluetooth">Bluetooth is disabled.\nDo you want to enable Bluetooth?</string>
+<string name="CP_Msg_ErrorCommunication">Failed to communicate with the printer.</string>
+<string name="CP_Msg_ErrorNotSupport">Selected printer is not supported.</string>
+</resources>

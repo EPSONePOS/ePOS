@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textView_devicetype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discovery_label_devtype"
+        android:textColor="#000000"/>
+
+    <RadioGroup android:id="@+id/radiogroup_devtype"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButton_tcp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/discovery_radio_tcp"
+            android:layout_weight="0.33"
+            android:textColor="#000000"/>
+
+        <RadioButton
+            android:id="@+id/radioButton_bluetooth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/discovery_radio_blueooth"
+            android:layout_weight="0.33"
+            android:textColor="#000000"/>
+
+        <RadioButton
+            android:id="@+id/radioButton_usb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/discovery_radio_usb"
+            android:layout_weight="0.33"
+            android:textColor="#000000"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView_pritnerlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discovery_label_printerlist"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"/>
+
+    <ListView
+        android:id="@+id/listView_printerlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#ffffff">
+    </ListView>
+
+</LinearLayout>

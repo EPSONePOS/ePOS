@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#FFFFFF">
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button_open"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/open_button_open"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textView_devicetype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open_label_devtype"
+            android:textColor="#000000"/>
+    
+        <RadioGroup android:id="@+id/radiogroup_devtype"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+    
+            <RadioButton
+                android:id="@+id/radioButton_tcp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/open_radio_tcp"
+                android:layout_weight="0.33"
+                android:textColor="#000000"/>
+    
+            <RadioButton
+                android:id="@+id/radioButton_bluetooth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/open_radio_blueooth"
+                android:layout_weight="0.33"
+                android:textColor="#000000"/>
+    
+            <RadioButton
+                android:id="@+id/radioButton_usb"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/open_radio_usb"
+                android:layout_weight="0.33"
+                android:textColor="#000000"/>
+    
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open_label_ip"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/editText_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView_printer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open_label_pritner"
+            android:textColor="#000000"/>
+
+        <Spinner
+            android:id="@+id/spinner_printer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open_label_langname"
+            android:textColor="#000000"/>
+
+        <Spinner
+            android:id="@+id/spinner_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:id="@+id/textView_statusmonitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/text_label_statusmonitor"
+            android:textColor="#000000" />
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView_enabled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_label_enabled"
+                    android:textColor="#000000" android:layout_marginLeft="20dp" android:layout_marginRight="10dp"/>
+
+
+                <ToggleButton
+                    android:id="@+id/toggleButton_statusmonitor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="ToggleButton" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/TextView_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_label_interval"
+                    android:textColor="#000000" android:layout_marginLeft="20dp" android:layout_marginRight="10dp"/>
+
+
+                <EditText
+                    android:id="@+id/editText_interval"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:inputType="number" />
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>
